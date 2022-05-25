@@ -1,13 +1,8 @@
+@import url(/css/menuCollapse.css);
+#imgLogoCompleto {
+    width: 205px;
+}
 
-
-a#nome_logo {
-    color: white;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    z-index: 3;
-    background: url(/imagens/2.png) no-repeat;
-    width: 151px;
-    height: 66px;
-    text-indent: -999px;
+#imgLogoSimples {
+    width: 40px;
 }
