@@ -6,3 +6,13 @@
 #imgLogoSimples {
     width: 40px;
 }
+
+.logos-lateral {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-lateral {
+    width: 30px;
+}

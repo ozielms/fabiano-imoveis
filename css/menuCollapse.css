@@ -16,8 +16,10 @@
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import url(/css/global/global.css);
 body {
     font-family: 'Poppins', sans-serif;
+    background-image: url("/imagens/planosDeFundo/passaros.png");
     background: #fafafa;
 }
 
@@ -26,7 +28,7 @@ p {
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
-    color: #999;
+    color: black;
 }
 
 a,
@@ -77,7 +79,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #050505;
+    background: var(--cor-primaria);
     color: #fff;
     transition: all 0.3s;
 }
@@ -129,7 +131,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: black;
+    background: var(--cor-secundaria);
 }
 
 #sidebar .sidebar-header strong {
@@ -139,7 +141,7 @@ span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--cor-secundaria);
 }
 
 #sidebar ul li a {
@@ -149,7 +151,7 @@ span {
 }
 
 #sidebar ul li a:hover {
-    color: #050505;
+    color: var(--cor-primaria);
     background: #fff;
 }
 
@@ -160,7 +162,7 @@ span {
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: black;
+    background: var(--cor-secundaria);
 }
 
 a[data-toggle="collapse"] {
@@ -178,7 +180,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: black;
+    background: var(--cor-secundaria);
 }
 
 ul.CTAs {
@@ -195,13 +197,17 @@ ul.CTAs a {
 
 a.download {
     background: #fff;
-    color: #050505;
+    color: var(--cor-primaria);
 }
 
 a.article,
 a.article:hover {
-    background: black !important;
+    background: var(--cor-secundaria) !important;
     color: #fff !important;
+}
+
+#link-menu-superior strong {
+    display: none;
 }
 
 
@@ -214,8 +220,6 @@ a.article:hover {
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    background-color: #3b3b3b;
-    /* BACKGROUND-COLOR: REMOVER NO FINAL - SOMENTE PARA DESCANSO DE VISTA */
 }
 
 
@@ -269,5 +273,8 @@ a.article:hover {
     }
     #sidebarCollapse span {
         display: none;
+    }
+    #link-menu-superior strong {
+        display: block;
     }
 }
