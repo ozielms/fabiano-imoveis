@@ -1,0 +1,33 @@
+@import url(/css/global/global.css);
+.header-footer {
+    /*  bottom: 0;
+    position: fixed;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    height: 50px;*/
+    color: var(--cor-letras);
+    padding: 15px;
+    width: 100%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 25px;
+}
+
+footer p {
+    color: var(--cor-letras);
+    font-size: 0.9em;
+}
+
+.footer-direitos {
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-direitos p {
+    color: var(--cor-letras);
+}

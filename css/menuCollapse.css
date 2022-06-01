@@ -17,6 +17,7 @@
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 @import url(/css/global/global.css);
+@import url(/css/footer.css);
 body {
     font-family: 'Poppins', sans-serif;
     background-image: url("/imagens/planosDeFundo/passaros.png");
@@ -206,8 +207,18 @@ a.article:hover {
     color: #fff !important;
 }
 
+#menu-superior li {
+    display: inline;
+    list-style-type: none;
+}
+
+#link-menu-superior a img {
+    width: 25px;
+}
+
 #link-menu-superior strong {
-    display: none;
+    color: var(--cor-letras);
+    font-style: italic;
 }
 
 
@@ -274,7 +285,19 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+@media (max-width: 992px) {
+    #menu-superior {
+        align-items: center;
+    }
+    #link-menu-superior a img {
+        width: 35px;
+    }
+    #link-menu-superior {
+        padding: 5px;
+    }
     #link-menu-superior strong {
-        display: block;
+        display: none;
     }
 }

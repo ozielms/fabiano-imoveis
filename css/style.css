@@ -13,6 +13,12 @@
     justify-content: center;
 }
 
+@media (max-width: 768px) {
+    .logos-lateral {
+        flex-direction: column;
+    }
+}
+
 .img-lateral {
     width: 30px;
 }
