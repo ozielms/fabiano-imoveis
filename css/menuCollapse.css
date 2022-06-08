@@ -221,6 +221,18 @@ a.article:hover {
     font-style: italic;
 }
 
+#homeSubmenuCompra li a strong,
+#homeSubmenuVenda li a strong,
+#homeSubmenuAluguel li a strong {
+    display: block;
+}
+
+#homeSubmenuCompra li img,
+#homeSubmenuVenda li img,
+#homeSubmenuAluguel li img {
+    display: none;
+}
+
 
 /* ---------------------------------------------------
     CONTENT STYLE
@@ -285,9 +297,19 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+    #homeSubmenuCompra li a strong,
+    #homeSubmenuVenda li a strong,
+    #homeSubmenuAluguel li a strong {
+        display: none;
+    }
+    #homeSubmenuCompra li img,
+    #homeSubmenuVenda li img,
+    #homeSubmenuAluguel li img {
+        display: block;
+    }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 998px) {
     #menu-superior {
         align-items: center;
     }
